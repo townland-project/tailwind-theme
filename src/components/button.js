@@ -1,11 +1,17 @@
+const defualts = {
+    'border-radius': 'var(--tl-defaults-radius, 6px)',
+    'position': 'relative',
+    'overflow': 'hidden',
+    'display': 'inline-flex',
+    'transition': 'all 0.3s',
+}
+
 module.exports = {
-    '.tl-button': {
+    '.tl-outlined-button': {
+        ...defualts,
+        'padding': '8px 14px 14px 14px',
         'border': '2px solid',
-        'border-radius': '8px',
-        'padding': '8px 14px',
-        'position': 'relative',
-        'overflow': 'hidden',
-        'transition': 'all 0.3s',
+        'border-color': 'var(--tl-defaults-border-color, #303952)',
 
         '&::before': {
             'content': '""',
@@ -17,22 +23,10 @@ module.exports = {
             'background-color': 'rgba(255, 255, 255, 0.25)',
             'border-radius': '6px',
             'transition': 'all 0.3s',
-        },
-
-        '&.tl-button-pressable': {
-            '&:hover': {
-                '&::before': {
-                    'bottom': '0%'
-                }
-            }
         }
     },
-    '.tl-simple-button': {
-        'border': '2px solid',
-        'border-radius': '8px',
+    '.tl-flat-button': {
+        ...defualts,
         'padding': '8px 14px',
-        'position': 'relative',
-        'overflow': 'hidden',
-        'transition': 'all 0.3s',
     }
 }
