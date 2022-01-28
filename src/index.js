@@ -7,7 +7,8 @@ module.exports = plugin(function ({ addComponents, addBase }) {
         require('./components/tabs'),
         require('./components/input'),
         require('./components/checkbox'),
-        require('./components/radio')
+        require('./components/radio'),
+        require('./components/switch')
     ]
 
     components.forEach(component =>
