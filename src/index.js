@@ -1,6 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin(function ({ addComponents }) {
+module.exports = plugin(function ({ addComponents, addBase }) {
     // Add your custom components here
     const components = [
         require('./components/button'),
@@ -14,6 +14,11 @@ module.exports = plugin(function ({ addComponents }) {
 
     // Add your custom styles here
     const colors = require('./styles/colors')
+    const root = require('./styles/root')
 
     addComponents(colors)
+
+    addBase({
+        ':root': root
+    })
 })
