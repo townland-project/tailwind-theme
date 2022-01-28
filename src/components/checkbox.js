@@ -1,10 +1,11 @@
 module.exports = {
     'label.tl-checkbox': {
-        'display': 'flex',
+        'display': 'inline-flex',
         'flex-wrap': 'nowrap',
         'align-items': 'center',
         'font-size': '14px',
         'cursor': 'pointer',
+        'user-select': 'none',
 
         'input[type="checkbox"]': {
             'cursor': 'pointer',
