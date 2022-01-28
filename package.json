@@ -1,0 +1,30 @@
+{
+  "name": "@townland-project/tailwind-theme",
+  "version": "0.0.1",
+  "description": "Townland GUI components for Tailwind CSS",
+  "main": "src/index.js",
+  "keywords": [
+    "townland",
+    "gui",
+    "components",
+    "theme",
+    "plugin",
+    "tailwind"
+  ],
+  "author": {
+    "name": "Townland Project",
+    "email": "mail@townland.xyz",
+    "url": "https://townland.xyz"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/townland-project/tailwind-theme"
+  },
+  "homepage": "https://tailwind.townland.xyz",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.16"
+  }
+}
