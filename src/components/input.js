@@ -35,6 +35,10 @@ module.exports = {
             'font-size': '14px',
             'outline': 'none',
 
+            '&:disabled': {
+                'pointer-event': 'none'
+            },
+
             '&::placeholder': {
                 'color': 'var(--tl-defaults-placeholder-color, #57606F)',
             }

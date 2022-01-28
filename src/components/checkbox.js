@@ -7,6 +7,11 @@ module.exports = {
         'cursor': 'pointer',
         'user-select': 'none',
 
+        '&.disabled': {
+            'pointer-event': 'none',
+            'opacity': '0.8'
+        },
+
         'input[type="checkbox"]': {
             'cursor': 'pointer',
             'width': '18px',
@@ -17,6 +22,10 @@ module.exports = {
             'border-color': 'var(--tl-defaults-border-color, #303952)',
             'position': 'relative',
             'overflow': 'hidden',
+
+            '&:disabled': {
+                'pointer-event': 'none'
+            },
 
             '&::before': {
                 'content': '""',
@@ -38,6 +47,10 @@ module.exports = {
 
         '&.tl-secondary input[type="checkbox"]:checked::before': {
             'background-color': 'var(--tl-theme-secondary)'
+        },
+
+        'input[type="checkbox"]:disabled:checked::before': {
+            'background-color': 'var(--tl-theme-disabled)'
         },
     }
 }

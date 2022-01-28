@@ -18,6 +18,10 @@ module.exports = {
             'position': 'relative',
             'overflow': 'hidden',
 
+            '&:disabled': {
+                'pointer-event': 'none',
+            },
+
             '&::before': {
                 'content': '""',
                 'position': 'absolute',
@@ -38,6 +42,9 @@ module.exports = {
 
         '&.tl-secondary input[type="radio"]:checked::before': {
             'background-color': 'var(--tl-theme-secondary)'
+        },
+        'input[type="radio"]:disabled:checked::before': {
+            'background-color': 'var(--tl-theme-disabled)'
         },
     }
 }

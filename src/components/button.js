@@ -18,6 +18,11 @@ const flat = {
     'transition': 'all 0.3s',
 }
 
+const disabled = {
+    'pointer-event': 'none',
+    'background-color': 'var(--tl-theme-disabled)'
+}
+
 module.exports = {
     '.tl-outlined-button': {
         ...defualts,
@@ -25,12 +30,14 @@ module.exports = {
         'border': '2px solid',
         'border-color': 'var(--tl-defaults-border-color, #303952)',
 
-        '&::before': flat
+        '&::before': flat,
+        '&:disabled': disabled
     },
     '.tl-flat-button': {
         ...defualts,
         'padding': '8px 14px 14px 14px',
-        
-        '&::before': flat
+
+        '&::before': flat,
+        '&:disabled': disabled
     }
 }

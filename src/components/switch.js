@@ -18,6 +18,10 @@ module.exports = {
             'position': 'relative',
             'overflow': 'hidden',
 
+            '&:disabled': {
+                'pointer-event': 'none'
+            },
+
             '&::before': {
                 'content': '""',
                 'position': 'absolute',
@@ -43,6 +47,10 @@ module.exports = {
 
         '&.tl-secondary input[type="checkbox"]:checked': {
             'background-color': 'var(--tl-theme-secondary)'
+        },
+
+        'input[type="checkbox"]:disabled:checked': {
+            'background-color': 'var(--tl-theme-disabled)'
         },
     }
 }
