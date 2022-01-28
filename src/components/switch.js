@@ -27,13 +27,13 @@ module.exports = {
                 'line-height': '15px',
                 'text-align': 'center',
                 'background-color': 'var(--tl-defaults-border-color, #303952)',
-                'width': '16px',
-                'height': '16px',
+                'width': '14px',
+                'height': '14px',
                 'border-radius': '50%'
             },
 
             '&:checked::before': {
-                'left': '12px'
+                'left': '20px'
             }
         },
 
