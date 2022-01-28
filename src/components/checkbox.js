@@ -30,6 +30,14 @@ module.exports = {
             '&:checked::before': {
                 'content': '"✔"',
             }
-        }
+        },
+
+        '&.tl-primary input[type="checkbox"]:checked::before': {
+            'background-color': 'var(--tl-theme-primary)'
+        },
+
+        '&.tl-secondary input[type="checkbox"]:checked::before': {
+            'background-color': 'var(--tl-theme-secondary)'
+        },
     }
 }
