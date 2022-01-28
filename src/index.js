@@ -16,10 +16,11 @@ module.exports = plugin(function ({ addComponents, addBase }) {
     // Add your custom styles here
     const colors = require('./styles/colors')
     const root = require('./styles/root')
+    const theme = require('./styles/theme')
 
     addComponents(colors)
 
     addBase({
-        ':root': root
+        ':root': Object.assign({}, root, theme)
     })
 })
