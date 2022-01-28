@@ -9,7 +9,7 @@ module.exports = {
 
         '&.disabled': {
             'pointer-event': 'none',
-            'opacity': '0.8'
+            'cursor': 'default'
         },
 
         'input[type="checkbox"]': {

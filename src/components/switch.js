@@ -7,6 +7,11 @@ module.exports = {
         'cursor': 'pointer',
         'user-select': 'none',
 
+        '&.disabled': {
+            'pointer-event': 'none',
+            'cursor': 'default'
+        },
+
         'input[type="checkbox"]': {
             'cursor': 'pointer',
             'width': '40px',

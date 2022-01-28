@@ -7,6 +7,11 @@ module.exports = {
         'cursor': 'pointer',
         'user-select': 'none',
 
+        '&.disabled': {
+            'pointer-event': 'none',
+            'cursor': 'default'
+        },
+
         'input[type="radio"]': {
             'cursor': 'pointer',
             'width': '18px',

@@ -9,6 +9,11 @@ module.exports = {
         'padding': '8px 14px',
         'background-color': '#ffffff',
 
+        '&.disabled': {
+            'pointer-event': 'none',
+            'background-color': '#dfe6e9'
+        },
+
         'svg': {
             'fill': 'var(--tl-defaults-placeholder-color, #57606F)',
             'width': '24px',
